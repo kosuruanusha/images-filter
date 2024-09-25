@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .main{
+            display: flex;
+           
+            width: 300px;
+            height: 240px;
+            margin-top: 40px;
+
+        }
+        .galary{
+            font-size: 20px;
+            transform: 2s ease;
+            width: 230px;
+            height: 200px;
+            opacity: 0;
+            text-align: center;
+            margin-top: -180px;
+            padding: 20px;
+            margin-left: 60px;
+            color: yellow;
+        }
+        .main:hover .galary{
+            transform: 2s ease;
+            opacity: 1;
+
+        }
+        .blur{filter: blur(90%);}
+        .opacity{filter: opacity(80%);}
+        .invert{filter: invert(40%);}
+        .hues{filter: hue-rotate(80deg);}
+        .text{filter:grayscale(90%)}
+        .hi{filter: saturate(2%);}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <img src="car.jpg" class="blur">
+            <p class="galary">This is one exapmle of image</p>
+        </div>
+        <div class="menu">
+            <img src="car.jpg" class="opacity">
+            <p class="galary">This is one exapmle of image</p>
+        </div>
+        <div class="menu">
+            <img src="car.jpg" class="invert">
+            <p class="galary">This is one exapmle of image</p>
+        </div>
+        <div class="menu">
+            <img src="car.jpg" class="hues-">
+            <p class="galary">This is one exapmle of image</p>
+        </div>
+        <div class="menu">
+            <img src="car.jpg" class="text">
+            <p class="galary">This is one exapmle of image</p>
+        </div>
+        <div class="menu">
+            <img src="car.jpg" class="hi">
+            <p class="galary">This is one exapmle of image</p>
+        </div>
+    </div>
+    
+</body>
+</html>
